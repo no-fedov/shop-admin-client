@@ -4,3 +4,8 @@ app:
       url:
         - http://localhost:8081/application/status
         - http://localhost:8082/application/status
+    good:
+      update-price:
+        url:
+          - http://localhost:8081/shop/good
+          - http://localhost:8082/shop/good

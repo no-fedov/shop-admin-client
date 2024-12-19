@@ -37,7 +37,7 @@ public class ShopServiceImpl implements ShopService {
             } catch (JacksonException e) {
                 log.warn("Ошибка парсинга ответа сервера на GET запрос по URL: {}. Ошибка: {}", url, e.getMessage());
             } catch (IOException e) {
-                log.warn("Ошибка выполнения запроса GET по URL: {}. Ошибка: {}", url, e.getMessage());
+                log.warn("Не удалось выполнить GET запрос по URL: {}. Ошибка: {}", url, e.getMessage());
             }
         }
         return statusDtos;

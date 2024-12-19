@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@EnableConfigurationProperties(StatusShopURL.class)
+@EnableConfigurationProperties({StatusShopURL.class, GoodPriceURL.class})
 public class AppConfig {
 
     @Bean
